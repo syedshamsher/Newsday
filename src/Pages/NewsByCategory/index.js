@@ -1,0 +1,1 @@
+export { NewsByCategory } from './NewsByCategory';

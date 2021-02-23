@@ -1,0 +1,35 @@
+
+a {
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.nav {
+    color: white;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+#input {
+    margin-right: 10px;
+    outline: none;
+    border: none;
+    width: 20%;
+}
+
+button {
+    outline: none;
+    border: none;
+    font-size: 14px;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+}
+
+@media screen and (max-width:459px) {
+    .nav {
+      color: white;
+      font-size: 8px;
+      font-weight: bolder;
+    }
+}

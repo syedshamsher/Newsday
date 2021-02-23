@@ -1,0 +1,50 @@
+body {
+    background-color: #EEEEEE;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    background: white;
+    text-align: left;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.img {
+    width: 50%;
+    height: 50px;
+}
+
+.wrapper > div {
+    /* line-height: 20px; */
+}
+
+.title {
+    margin: 10px;
+}
+
+.description {
+    margin: 10px;
+    font-size: 12px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+#title {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#content:hover #title {
+    color: #d01345;
+    font-size: 12px;
+}

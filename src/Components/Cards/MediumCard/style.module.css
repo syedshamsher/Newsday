@@ -1,0 +1,200 @@
+body {
+    background-color: #EEEEEE;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    background: white;
+    text-align: left;
+}
+
+.img {
+    width: 100%;
+}
+
+.wrapper > div {
+    line-height: 20px;
+}
+
+.wrapper > div:hover #title {
+    color: #d01345;
+}
+
+#title {
+    margin: 10px;
+}
+
+#description {
+    margin: 10px;
+}
+
+@media screen and (max-width: 1600px) {
+    #title {
+        font-size: 20px;
+        margin-right: 25px;
+        margin-top: 10px;
+    }
+
+    #description {
+        font-size: 14px;
+        margin-right: 20px;
+        margin-top: 0px;
+    }
+
+    #source_name {
+        margin: 13px;
+        margin-top: -1px;
+        font-size: 10px;
+    }
+
+    #card {
+        height: 400px;
+    }
+
+    #media {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    #title {
+        font-size: 16px;
+        margin-right: 25px;
+        margin-top: 10px;
+    }
+
+    #description {
+        font-size: 12px;
+        margin-right: 20px;
+        margin-top: -5px;
+    }
+
+    #source_name {
+        margin: 12px;
+        margin-top: -5px;
+        font-size: 10px;
+    }
+
+    #card {
+        height: 310px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #title {
+        font-size: 15px;
+        margin-right: 25px;
+        margin-top: 10px;
+    }
+
+    #description {
+        font-size: 10px;
+        margin-right: 20px;
+        margin-top: -5px;
+    }
+
+    #source_name {
+        margin: 12px;
+        margin-top: -5px;
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #title {
+        font-size: 11px;
+        margin-right: 25px;
+        margin-top: 10px;
+    }
+
+    #description {
+        font-size: 9px;
+        margin-right: 20px;
+        margin-top: -5px;
+    }
+
+    #source_name {
+        margin: 12px;
+        margin-top: -5px;
+        font-size: 8px;
+    }
+    
+    #card {
+        height: 245px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #title {
+        font-size: 16px;
+        margin-right: 25px;
+        margin-top: 10px;
+    }
+
+    #description {
+        font-size: 13px;
+        margin-right: 20px;
+        margin-top: -10px;
+    }
+
+    #source_name {
+        margin: 12px;
+        margin-top: -5px;
+        font-size: 8px;
+    }
+     
+    #card {
+        height: 350px;
+    }
+
+    #media {
+        height: 220px;
+    }
+}
+@media screen and (max-width: 480px) {
+    #title {
+        font-size: 14px;
+        margin-right: 25px;
+    }
+
+    #description {
+        font-size: 12px;
+        margin-right: 20px;
+        margin-top: -10px;
+    }
+
+    #source_name {
+        margin: 10px;
+        margin-top: -10px;
+        font-size: 8px;
+    }
+
+    #card {
+        height: 315px;
+    }
+
+    #media {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 326px) {
+    #title {
+        font-size: 10px;
+        margin-right: 25px;
+    }
+
+    #description {
+        font-size: 9px;
+        margin-right: 20px;
+        margin-top: -10px;
+    }
+
+    #source_name {
+        margin: 10px;
+        margin-top: -10px;
+        font-size: 8px;
+    }
+}

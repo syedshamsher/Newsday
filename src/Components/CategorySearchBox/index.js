@@ -1,0 +1,1 @@
+export { CategorySearchBox } from './CategorySearchBox';
