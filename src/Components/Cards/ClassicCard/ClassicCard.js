@@ -23,27 +23,29 @@ export const ClassicCard = ({news}) => {
     const classes = useStyles();
     return (
         <div>
-            <Card className={classes.root} id={styles.card}>
-                <CardActionArea id={styles.cardAction}>
-                    <CardMedia
-                        className={classes.media}
-                        id={styles.media}
-                        image={news.urlToImage}
-                        title={news.title}
-                    />
-                    <CardContent>
-                    <Typography gutterBottom variant="h5" component="h3" id={styles.title}>
-                        {news.title}
-                    </Typography>
-                    <Typography variant="body2" color="textSecondary" component="p"  id={styles.description}>
-                        {news.description.substring(0, 160)}.....
-                    </Typography>
-                    <Typography variant="body2" color="textSecondary" component="p"  id={styles.source_name}>
-                        {news.source.name}
-                    </Typography>
-                    </CardContent>
-                </CardActionArea>
-             </Card>
+            <a href={news.url}>
+                <Card className={classes.root} id={styles.card}>
+                    <CardActionArea id={styles.cardAction}>
+                        <CardMedia
+                            className={classes.media}
+                            id={styles.media}
+                            image={news.urlToImage}
+                            title={news.title}
+                        />
+                        <CardContent>
+                        <Typography gutterBottom variant="h5" component="h3" id={styles.title}>
+                            {news.title}
+                        </Typography>
+                        <Typography variant="body2" color="textSecondary" component="p"  id={styles.description}>
+                            {news.description.substring(0, 160)}.....
+                        </Typography>
+                        <Typography variant="body2" color="textSecondary" component="p"  id={styles.source_name}>
+                            {news.source.name}
+                        </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+            </a>
         </div>
     )
 }

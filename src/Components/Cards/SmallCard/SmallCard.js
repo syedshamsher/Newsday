@@ -23,23 +23,26 @@ export const SmallCard = ({news}) => {
   
     return (
     <React.Fragment>
-      <Card className={classes.root}>
-        <CardMedia
-          className={classes.cover}
-          image={news.urlToImage}
-          title={news.title}
-        />
-        <div className={classes.details}>
-          <CardContent id={styles.content}>
-            <Typography id={styles.title}>
-                {news.title.substring(0, 80)}...
-            </Typography>
-            <Typography variant="subtitle1" color="textSecondary" className={classes.source}>
-              {news.source.name}
-            </Typography>
-          </CardContent>
-        </div>
-      </Card>
+      <a href={news.url}>
+        <Card className={classes.root}>
+          <CardMedia
+            className={classes.cover}
+            image={news.urlToImage}
+            title={news.title}
+          />
+          <div className={classes.details}>
+            <CardContent id={styles.content}>
+              <Typography id={styles.title}>
+                  {news.title}...
+              </Typography>
+              <Typography variant="subtitle1" color="textSecondary" className={classes.source}>
+                {news.source.name}
+              </Typography>
+            </CardContent>
+          </div>
+        </Card>
+      </a>
+
     </React.Fragment>
     );
 }

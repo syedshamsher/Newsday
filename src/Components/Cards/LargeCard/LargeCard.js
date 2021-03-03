@@ -28,23 +28,25 @@ export const LargeCard = ({news}) => {
   
     return (
     <div>
-      <Card className={classes.root}>
-        <CardMedia
-          className={classes.cover}
-          image={news.urlToImage}
-          title={news.title}
-        />
-        <div className={classes.details}>
-          <CardContent className={classes.content}>
-            <Typography  className={classes.title}>
-              {news.title.substring(0, 80)}...
-            </Typography>
-            <Typography variant="subtitle1" color="textSecondary">
-              {news.source.name}
-            </Typography>
-          </CardContent>
-        </div>
-      </Card>
+      <a href={news.url}>
+        <Card className={classes.root}>
+          <CardMedia
+            className={classes.cover}
+            image={news.urlToImage}
+            title={news.title}
+          />
+          <div className={classes.details}>
+            <CardContent className={classes.content}>
+              <Typography  className={classes.title}>
+                {news.title.substring(0, 80)}...
+              </Typography>
+              <Typography variant="subtitle1" color="textSecondary">
+                {news.source.name}
+              </Typography>
+            </CardContent>
+          </div>
+        </Card>
+      </a>
     </div>
     );
 }

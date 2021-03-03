@@ -6,7 +6,6 @@ import {  NavLink, useHistory } from 'react-router-dom';
 import styles from './style.module.css'
 import { useDispatch } from 'react-redux';
 import { getNewsByQuery } from '../../Redux/NewsByQuery/actions';
-// 383A49
 
 const useStyles = makeStyles(() => ({
   appBar: {
@@ -48,13 +47,13 @@ export function Navbar() {
           <NavLink to='/' >
                 <HomeIcon className={classes.homeIcon} />
           </NavLink>
-          <NavLink className={styles.nav} to='/latest' activeStyle={{padding: "0 12px 0 12px", backgroundColor: "#d01345",transform: "skew(-18deg)", color: "white"}}>
+          <NavLink className={styles.nav} to='/latest' activeStyle={{padding: "0 12px 0 12px", backgroundColor: "#ffffff", color: "black"}}>
                 Latest News
           </NavLink>
-          <NavLink className={styles.nav} to='/by-source' activeStyle={{padding: "0 12px 0 12px", backgroundColor: "#d01345",transform: "skew(-18deg)", color: "white"}}>
+          <NavLink className={styles.nav} to='/by-source' activeStyle={{padding: "0 12px 0 12px", backgroundColor: "#ffffff", color: "black"}}>
                 News By Source
           </NavLink>
-          <NavLink className={styles.nav} to='/by-category' activeStyle={{padding: "0 12px 0 12px", backgroundColor: "#d01345",transform: "skew(-18deg)", color: "white"}}>
+          <NavLink className={styles.nav} to='/by-category' activeStyle={{padding: "0 12px 0 12px", backgroundColor: "#ffffff", color: "black"}}>
                 News By Category
           </NavLink>
           <input id={styles.input} type="text" name="query" value={query} onChange={(e) => setQuery(e.target.value)}  />

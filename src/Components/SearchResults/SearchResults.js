@@ -25,7 +25,7 @@ export const SearchResults = ({news}) => {
 
   React.useEffect(() => {
     setLoading(true)
-    setTimeout(() => setLoading(false),3000)
+    setTimeout(() => setLoading(false),1000)
   },[sourceLoading, categoryLoading])
 
   return (

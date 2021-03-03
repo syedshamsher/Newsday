@@ -25,26 +25,29 @@ export const LongSmallCard = ({news}) => {
   
     return (
     <React.Fragment>
-      <Card className={classes.root}>
-        <CardMedia
-          className={classes.cover}
-          image={news.urlToImage}
-          title={news.title}
-        />
-        <div className={classes.details}>
-          <CardContent id={styles.content}>
-            <Typography  id={styles.title}>
-                {news.title.substring(0, 60)}...
-            </Typography>
-            <Typography  id={styles.description}>
-                {news.description.substring(0, 60)}...
-            </Typography>
-            <Typography id={styles.source_name} color="textSecondary">
-              {news.source.name}
-            </Typography>
-          </CardContent>
-        </div>
-      </Card>
+      <a href={news.url}>
+        <Card className={classes.root}>
+          <CardMedia
+            className={classes.cover}
+            image={news.urlToImage}
+            title={news.title}
+          />
+          <div className={classes.details}>
+            <CardContent id={styles.content}>
+              <Typography  id={styles.title}>
+                  {news.title.substring(0, 60)}...
+              </Typography>
+              <Typography  id={styles.description}>
+                  {news.description.substring(0, 60)}...
+              </Typography>
+              <Typography id={styles.source_name} color="textSecondary">
+                {news.source.name}
+              </Typography>
+            </CardContent>
+          </div>
+        </Card>
+      </a>
+
     </React.Fragment>
     );
 }
